@@ -38,20 +38,20 @@ def import_blog(page, target=None):
 
     # Package the post for inclusion in the Signpost.
     post = '''<noinclude>{{Signpost draft}}
-    {{Wikipedia:Signpost/Template:Signpost-header|||}}</noinclude>
+{{Wikipedia:Signpost/Template:Signpost-header|||}}</noinclude>
 
-    <div style="padding-left:50px; padding-right:50px;">
+<div style="padding-left:50px; padding-right:50px;">
 
-    {{Wikipedia:Signpost/Template:Signpost-article-start|{{{1|Your title}}}|By ?| {{subst:#time:j F Y|{{subst:Wikipedia:Wikipedia Signpost/Issue|4}}}}}}
+{{Wikipedia:Signpost/Template:Signpost-article-start|{{{1|Your title}}}|By ?| {{subst:#time:j F Y|{{subst:Wikipedia:Wikipedia Signpost/Issue|4}}}}}}
 
-    </div>
+</div>
 
-    {{Wikipedia:Wikipedia Signpost/Templates/WM Blog}}
+{{Wikipedia:Wikipedia Signpost/Templates/WM Blog}}
 
-    <div style="width:46em; line-height:1.6em; font-size:1em; font-family:Helvetica Neue, Helvetica, Arial, sans-serif; padding-left:5em;" class="plainlinks">''' + post + '''</div>
+<div style="width:46em; line-height:1.6em; font-size:1em; font-family:Helvetica Neue, Helvetica, Arial, sans-serif; padding-left:5em;" class="plainlinks">''' + post + '''</div>
 
-    <noinclude>{{Wikipedia:Signpost/Template:Signpost-article-comments-end||2015-04-22|2015-05-06}}
-    </noinclude>'''
+<noinclude>{{Wikipedia:Signpost/Template:Signpost-article-comments-end||2015-04-22|2015-05-06}}
+</noinclude>'''
 
     # Post the content to the target page.
     signpostlib.saveContentToPage(post, target, 'Importing basic Blog repost via the [https://github.com/ResidentMario/Blog_Importer Blog_Importer] script.')
